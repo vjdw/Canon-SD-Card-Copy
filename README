@@ -1,0 +1,3 @@
+Copy 81-sdcard-sync.rules to /etc/udev/rules.d/
+
+Copy the Python files to /usr/bin/

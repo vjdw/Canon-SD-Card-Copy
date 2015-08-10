@@ -1,0 +1,1 @@
+KERNEL=="sd?1", ATTRS{idVendor}=="0781", ATTRS{idProduct}=="a7a8", ATTRS{serial}=="6333011111B1", RUN+="/usr/bin/sd-card-sync-start.py"
