@@ -4,5 +4,6 @@ A hierarchical date directory structure is created on the target filesystem (e.g
 
 --- Installation ---
 
-Copy 81-sdcard-sync.rules to /etc/udev/rules.d/
-Copy the Python files to /usr/bin/
+1. Copy 81-sdcard-sync.rules to /etc/udev/rules.d/
+2. Copy the Python files to /usr/bin/
+3. Edit source and target paths in sd-card-sync.py
