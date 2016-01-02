@@ -136,10 +136,10 @@ def copyFile(src, trg):
 # expands to /trg/2011/04/16/ based on file's modified date.
 def getFullTargetDirOlympus(fullSrcFilePath, targetRoot):
   fileDateTime = time.localtime(os.path.getmtime(fullSrcFilePath))
-  day = fileDateTime.tm_mday
-  month = fileDateTime.tm_mon
-  year = fileDateTime.tm_year
-  return targetRoot + str(year) + "/" + str(month) + "/" + str(day) + "/"
+  day = str(fileDateTime.tm_mday).zfill(2)
+  month = str(fileDateTime.tm_mon).zfill(2)
+  year = str(fileDateTime.tm_year)
+  return targetRoot + year + "/" + month + "/" + day + "/"
 
 # expands /src/139_1604/ to /trg/2011/04/16/
 def getFullTargetDirCanon(fullSrcDir, targetRoot):
