@@ -1,4 +1,4 @@
-Python scripts (and a udev rule) to keep track of new photos on a Canon memory card, and copy them automatically when that card is mounted.
+Python scripts (and a udev rule) to keep track of new photos on a Canon or Olympus memory card, and copy them automatically when that card is mounted.
 
 A hierarchical date directory structure is created on the target filesystem (e.g. /target/2015/08/10/123_1008.jpg) 
 
@@ -7,3 +7,4 @@ A hierarchical date directory structure is created on the target filesystem (e.g
 1. Copy 81-sdcard-sync.rules to /etc/udev/rules.d/
 2. Copy the Python files to /usr/bin/
 3. Edit source and target paths in sd-card-sync.py
+4. Add an empty file named SYNC.ME to the camera's memory card
