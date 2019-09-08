@@ -87,7 +87,7 @@ def doSyncOlympus(srcImagePath, trg):
 
   # Sync all files on card that aren't named in SYNC.ME
   cardFiles = os.listdir(srcImagePath)
-  toCopyFiles = [item for item in cardFiles if not item in copiedFiles]
+  toCopyFiles = [item for item in cardFiles if not item in copiedFiles and not item.endswith('.ORF') and not item.endswith('.pp3')]
 
   # Do copy
   for file in toCopyFiles:
