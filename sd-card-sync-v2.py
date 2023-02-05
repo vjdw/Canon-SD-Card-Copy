@@ -13,11 +13,10 @@ import shutil
 SPECIALFILE_SYNCME = 'SYNC.ME'
 
 # Where to save photos to.
-trgPathRoot = "/home/vin/fileshare/photos/camera/"
-trgSyncDir = "sdSyncTarget/"
+trgPathRoot = "/srv/data/syncthing/vin/photos/camera/"
 trgHost = "hunchcorn"
 # Olympus source paths.
-srcOlympusRoot = "/media/vin/OLYMPUS"
+srcOlympusRoot = "/mnt/d"
 srcOlympus = srcOlympusRoot + "/DCIM/100OLYMP/"
 syncFilePathOlympus = srcOlympus + SPECIALFILE_SYNCME
 
@@ -62,7 +61,7 @@ def doSyncOlympus(srcImagePath, trgHost, trgPath):
   # Do copy
   for file in toCopyFiles:
     fullSrcPath = srcImagePath + file
-    fullTrgPath = getFullTargetDirOlympus(fullSrcPath, trgPath + trgSyncDir)
+    fullTrgPath = getFullTargetDirOlympus(fullSrcPath, trgPath)
     copyFile(fullSrcPath, trgHost, fullTrgPath)
 
   writeSyncMeFile(syncFilePath, cardFiles, trgHost)
