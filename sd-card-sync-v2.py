@@ -1,5 +1,8 @@
 #!/usr/bin/python -tt
 
+# To mount to drive E: in WSL/Ubuntu
+# sudo mount -t drvfs E: /mnt/d
+
 import sys
 import os
 import time
