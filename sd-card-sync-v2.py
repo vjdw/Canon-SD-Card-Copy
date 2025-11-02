@@ -16,7 +16,7 @@ SPECIALFILE_SYNCME = 'SYNC.ME'
 trgPathRoot = "/srv/data/syncthing/vin/photos/camera/"
 trgHost = "hunchcorn"
 # Olympus source paths.
-srcOlympusRoot = "/mnt/d"
+srcOlympusRoot = "/media/vin/Oly64gb"
 srcOlympus = srcOlympusRoot + "/DCIM/100OLYMP/"
 syncFilePathOlympus = srcOlympus + SPECIALFILE_SYNCME
 
